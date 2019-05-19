@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+// import "bulma/css/bulma.min.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -36,6 +37,8 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
+            <br/>
+            <hr/>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
